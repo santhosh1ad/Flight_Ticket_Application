@@ -34,5 +34,9 @@ Java 8
 Maven 3
 
 
+DataBase 
+Using H2 in-memory database, which (database as well as data) will be removed from memory when the application goes down.
+While the application is running, you can access the H2 Console if you want to see the data outside the application.
+
 
 
