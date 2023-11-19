@@ -1,7 +1,7 @@
-Flight Ticket Application
+#Flight Ticket Application
 Flight Ticket Application is a Spring Boot application that showcases REST API development using Spring MVC and Spring Data JPA, leveraging Java 8 features.
 
-Features:
+##Features:
 The application consists of the following endpoints:
 
 /Home/flights/date - Users can search for flights based on the flight date. Example: localhost:8080/Home/flights/2023-10-11 (Date format: "yyyy-mm-dd").
@@ -22,19 +22,20 @@ Note: These APIs are accessible only to authorized users, specifically Admin.
 
 Note: These Admin-specific APIs (6, 7) are accessible only to authorized Admin users.
 
-Technologies Used:
+#Technologies Used:
 Java (Programming Language)
 Spring Boot (Application Platform)
 Spring Data JPA (Data Persistence)
 MySQL (Database)
-Prerequisites:
+
+#Prerequisites:
 Ensure you have the following installed:
 
 Java 8
 Maven 3
 
 
-DataBase 
+#DataBase 
 Using H2 in-memory database, which (database as well as data) will be removed from memory when the application goes down.
 While the application is running, you can access the H2 Console if you want to see the data outside the application.
 
