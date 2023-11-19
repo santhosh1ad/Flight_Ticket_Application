@@ -39,5 +39,59 @@ Maven 3
 Using H2 in-memory database, which (database as well as data) will be removed from memory when the application goes down.
 While the application is running, you can access the H2 Console if you want to see the data outside the application.
 
+# Entity Classes
+
+## 1. Seat Class
+
+The `Seat` class represents an individual seat within a flight. Each seat has a unique seat number and can be associated with a specific flight.
+
+### Attributes
+
+- **seatNumber:** The unique number assigned to the seat.
+- **flight:** The flight to which the seat belongs.
+- **booked:** A boolean indicating whether the seat is booked or not.
+
+### Constructors
+
+- **Default Constructor:** Initializes a seat with default values.
+- **Parameterized Constructor:** Takes a seat number and the associated flight.
+
+### Methods
+
+- **getSeatNumber():** Returns the seat number.
+- **setSeatNumber(int seatNumber):** Sets the seat number.
+- **isBooked():** Returns true if the seat is booked; otherwise, false.
+- **setBooked(boolean booked):** Sets the booked status.
+
+## 2. Flights Class
+
+The `Flights` class represents information about a flight. It includes details such as flight ID, name, departure time, arrival time, departure location, arrival location, and date.
+
+### Attributes
+
+- **flightId:** Unique identifier for the flight.
+- **Name:** Name or identifier of the flight.
+- **departureTime:** Time when the flight departs.
+- **arrivalTime:** Time when the flight arrives.
+- **departureLocation:** Location from where the flight departs.
+- **arrivalLocation:** Location where the flight arrives.
+- **date:** Date of the flight.
+- **seats:** List of seats associated with the flight.
+
+### Constructors
+
+- **Default Constructor:** Initializes a flight with default values.
+- **Parameterized Constructor:** Takes details such as flight ID, name, times, locations, and date.
+
+### Methods
+
+- **getSeats():** Returns the list of seats associated with the flight.
+- **setSeats(List<Seat> seats):** Sets the list of seats for the flight.
+- **initializeSeats():** Initializes seats for the flight, creating 60 seats by default.
+
+# Relation
+Flights (One) ----< Seat (Many)
+
+
 
 
